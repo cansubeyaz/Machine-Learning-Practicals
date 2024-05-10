@@ -15,7 +15,7 @@ cov2 = [[0.5, 0], [0, 0.5]]
 
 
 def create_data(n_samples):
-    # Generate data for each distribution
+    #data for each distribution
     data_mu0 = np.random.multivariate_normal(mu0, cov0, n_samples)
     data_mu1 = np.random.multivariate_normal(mu1, cov1, n_samples)
     data_mu2 = np.random.multivariate_normal(mu2, cov2, n_samples)
