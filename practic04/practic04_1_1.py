@@ -36,7 +36,7 @@ def main(args):
     train_mu0, train_mu1, _ = create_data(args.train_samples)
     eval_mu0, eval_mu1, eval_mu2 = create_data(args.eval_samples)
 
-    # Create numpy matrices
+    # numpy matrices
     data = {}
     data['X'] = np.vstack((train_mu0, train_mu1)) #stack the two training data distributions.
     data['Y_0_1'] = np.vstack((eval_mu0, eval_mu1)) #stack the mu_0 and mu_1 distributions from the evaluation set.
